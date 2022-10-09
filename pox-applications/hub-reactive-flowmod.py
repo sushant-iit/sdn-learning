@@ -12,6 +12,4 @@ def _handle_PacketIn (event):
 
 def launch ():
     core.openflow.addListenerByName("PacketIn", _handle_PacketIn)
-    # log.info("Hub application is running...")
-
-# launch()
+    log.info("Hub application is running...")
